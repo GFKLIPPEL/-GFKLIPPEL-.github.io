@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Guilherme Klippel</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        video.background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100vw; /* Largura de 100% da viewport */
+            height: 100vh; /* Altura de 100% da viewport */
+            object-fit: cover; /* Garante que o vídeo cubra toda a tela sem distorção */
+            object-position: center; /* Centraliza o vídeo */
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Alterado para branco */
+            text-align: center;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra no texto para melhorar a legibilidade */
+        }
+    </style>
+</head>
+<body>
+
+<video class="background-video" autoplay loop muted>
+    <source src="VID-20230502-WA0012.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos incorporados.
+</video>
+
+<div class="content">
+    <h1>Bem-vindos ao site do Guilherme Klippel</h1>
+    <p>aqui vão ficar informados sobre tudo o que acontece na minha vida.</p>
+</div>
+
+</body>
+</html>
+
